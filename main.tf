@@ -2,7 +2,7 @@ terraform {
   required_providers {
     docker = {
       source  = "kreuzwerker/docker"
-      version = "3.0.1"
+      version = "3.0.2"
     }
   }
 }
@@ -20,4 +20,6 @@ resource "docker_container" "nginx_container" {
     internal = var.internal_port
     external = var.external_port
   }
+  restart = "always"
 }
+
