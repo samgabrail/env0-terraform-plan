@@ -13,7 +13,7 @@ This is a tutorial to teach how to use `terraform plan`.
 5. Run `docker ps`
 6. Go to the ports tab and view the NGINX welcome screen
 
-### Modification of a New Resource
+### Modification of an Existing Resource
 
 1. Change the restart to `restart = "on-failure"` in `main.tf`
 2. Run `terraform plan`
